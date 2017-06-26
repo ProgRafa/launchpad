@@ -1,0 +1,188 @@
+body, p, h1, h2, h3, a, button
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+body
+{
+    background: rgba(192, 48, 0, 1);
+    min-height: 100%;
+    text-align: center;
+}
+
+#timer
+{
+    position: relative;
+    width: 90%;
+    height: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid white;
+}
+
+#barraTempo
+{
+    width: 0;
+    height: 8px;  
+    border-radius: 4px;
+    background: rgba(192, 48, 0, 1);
+}
+
+#clock
+{
+    font-size: 1.5em;
+    border: 2px solid black;
+    background: black;
+    color: red;
+}
+
+@media screen and (max-width: 540px)
+{
+    #corpo
+    {
+        position: absolute;
+        padding: 10px;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        background: url("../img/plastico.jpeg");
+        border: 5px solid black;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    body
+    {
+        font-size: 6px;
+    }
+}
+
+@media screen and (min-width: 541px)
+{
+    #corpo
+    {
+        position: absolute;
+        padding: 10px;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        background: url("../img/plastico.jpeg");
+        border: 5px solid black;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    body
+    {
+        font-size: 12px;
+    }
+}
+
+#stoPlay
+{
+    left: 50%;
+    transform: translate(-50%, -20%);   
+}
+
+#muted
+{
+    left: 0;
+    transform: translate(20%, -20%);
+}
+
+#reset
+{
+    right: 0;
+    transform: translate(-20%, -20%);
+}
+
+.fa
+{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 93, 255, 1);
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+#fundo
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    min-height: 100%;
+    background: gray;
+    opacity: 0.9;
+}
+
+#return
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 70px;
+    border: 2px solid rgba(0, 93, 255, 1);
+    border-radius: 30px;
+    background: rgba(0, 93, 255, 1);
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
+}
+
+#return:hover
+{
+    background: rgba(0, 58, 255, 0.9);
+}
+
+#return:active
+{
+    background: blue;
+}
+
+.gameButton
+{
+    border: 2px solid rgba(99, 184, 255, 1);
+    border-radius: 10px;
+    background: rgba(54, 100, 139, 1);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.info
+{
+    width: 33%;
+    font-size: 3em;
+}
+
+.end-info
+{
+    margin-top: 50px;
+    min-width: 100%;
+    font-size: 3em;
+    color: rgba(192, 48, 0, 1);
+}
+
+div
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+}
